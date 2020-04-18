@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  $('.pic-alert').hide()
   $('#paste').on('click', function(){
     let url = $("#pic_url").val()
     if(/^http.+\.(jpg|jpeg|png|gif)$/.test(url)){
