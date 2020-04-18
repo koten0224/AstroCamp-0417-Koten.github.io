@@ -8,8 +8,15 @@
 .pic-alert{
   display: flex;
   background-color: rgba(0, 0, 0, .5);
+  position: absolute;
   z-index: 2;
+  top: 0;
+  left: 0
 }
 .pic-alert img{
   height: 300px;
+}
+
+body{
+  position: static;
 }
