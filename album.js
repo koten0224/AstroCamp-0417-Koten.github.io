@@ -25,7 +25,7 @@ $(document).ready(function() {
     $("#full-pic").prepend(`<img src=${url} alt=""></<img>`)
   })
 
-  $('#pic-confirm').on('click', function(){
+  $('#pic-confirm,.pic-show').on('click', function(){
     $("#full-pic").find($('img')).remove()
     $('.pic-show').hide()
   })
@@ -37,7 +37,7 @@ $(document).ready(function() {
     $('.pic-show').hide()
   })
 
-  $('#alert-confirm').on('click', function(){
+  $('#alert-confirm,.pic-alert').on('click', function(){
     $('.pic-alert').hide()
   })
 
