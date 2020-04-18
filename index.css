@@ -1,0 +1,15 @@
+h3{
+  line-height: 100px;
+}
+#album{
+  border: 10px dashed #ddd;
+  min-height: 200px;
+}
+.pic-alert{
+  display: flex;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 2;
+}
+.pic-alert img{
+  height: 300px;
+}
