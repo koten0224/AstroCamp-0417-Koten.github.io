@@ -7,6 +7,9 @@
   border: 10px dashed #ddd;
   min-height: 200px;
 }
+.picture{
+  cursor: pointer;
+}
 .pic-alert{
   display: flex;
   background-color: rgba(0, 0, 0, .5);
@@ -28,8 +31,9 @@
   left: 0;
 }
 
-.full-pic{
-  height: 700px;
+#full-pic img{
+  max-height: 600px;
+  max-width: 500px;
 }
 
 body{

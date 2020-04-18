@@ -8,7 +8,7 @@ $(document).ready(function() {
     if($(this).attr('id') === 'paste'){
       url = $("#pic_url").val()
     }else{
-      url = `https://i.picsum.photos/id/${randomPicID()}/300/300.jpg`
+      url = `https://i.picsum.photos/id/${randomPicID()}/500/500.jpg`
     }
     if(/^http.+\.(jpg|jpeg|png|gif)$/.test(url)){
       $("#album").prepend(`<div class="picture col-6 col-md-4 p-1"><img class="w-100" src=${url} alt=""></div>`)
@@ -20,9 +20,9 @@ $(document).ready(function() {
 
   $('#album').on('click','.picture' ,function() {
     tempPic = $(this)
-    let url = tempPic.find("img").attr("src").replace('300/300.jpg', '500/500.jpg')
+    let url = tempPic.find("img").attr("src")
     $(".pic-show").show()
-    $("#full-pic").prepend(`<img class="w-100" src=${url} alt=""></<img>`)
+    $("#full-pic").prepend(`<img src=${url} alt=""></<img>`)
   })
 
   $('#pic-confirm').on('click', function(){
