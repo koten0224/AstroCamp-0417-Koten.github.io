@@ -10,7 +10,7 @@ $(document).ready(function() {
       url = `https://i.picsum.photos/id/${randomPicID()}/300/300.jpg`
     }
     if(/^http.+\.(jpg|jpeg|png|gif)$/.test(url)){
-      $("#album").prepend(`<div class="picture col-6 col-sm-4 p-1"><img class="w-100" src=${url} alt=""></div>`)
+      $("#album").prepend(`<div class="picture col-6 col-md-4 p-1"><img class="w-100" src=${url} alt=""></div>`)
     }else{
       $('.pic-alert').show()
     }
