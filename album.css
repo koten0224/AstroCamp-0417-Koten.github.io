@@ -10,13 +10,26 @@
 .pic-alert{
   display: flex;
   background-color: rgba(0, 0, 0, .5);
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 0;
-  left: 0
+  left: 0;
 }
 .pic-alert img{
   height: 300px;
+}
+
+.pic-show{
+  display: flex;
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  z-index: 2;
+  top:0;
+  left: 0;
+}
+
+.full-pic{
+  height: 700px;
 }
 
 body{

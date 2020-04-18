@@ -11,18 +11,10 @@
     <title>Koten's album</title>
   </head>
   <body>
-    <div class="pic-alert w-100 h-100" style="display:none;">
-      <div class="m-auto d-flex flex-column align-items-center">
-        <div>
-          <img src="https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1587143747443.jpg" alt="">
-        </div>
-        <div class="btn btn-primary mt-2" id="alert-confirm">
-          我知道了
-        </div>
-      </div>
-      
-    </div>
+
     <div class="container">
+
+      <!-- 標題 -->
       <div class="header">
         <div>
           <h3>AstroCamp 4th</h3>
@@ -30,22 +22,73 @@
         </div>
       </div>
 
+      <!-- 網址輸入框與按鈕 -->
       <div class="row justify-content-center" id="input-area">
         <div class="action row w-100 align-items-center">
+
+          <!-- 輸入框 -->
           <div class="col-12 col-sm-6 col-xl-10 mb-2 mb-sm-0">
             <input class="w-100" type="text" id="pic_url" placeholder='請輸入圖片網址'>
           </div>
+
+          <!-- 摁鈕 -->
           <div class="d-flex col-12 col-sm-6 col-xl-2 mb-2 mb-sm-0">
             <div class="p-1 w-50"><button class="btn btn-danger w-100" id="paste">貼上</button></div>
             <div class="p-1 w-50"><button class="btn btn-success w-100" id="random">隨機</button></div>
           </div>
+
         </div>
       </div>
-
+      <!-- 輸入框end -->
+      
+      <!-- 相簿本體 -->
       <div class="row flex-wrap p-2 mt-3" id="album">
       </div>
 
     </div>
+    <!-- container end -->
+
+    <!-- 秀大圖 -->
+    <div class="pic-show w-100 h-100" style="display:none;">
+      <div class="m-auto d-flex flex-column align-items-center">
+
+        <!-- 大圖本體 -->
+        <div id="full-pic">
+        </div>
+
+        <!-- 兩顆摁鈕 -->
+        <div class="mt-2 d-flex col-12">
+          <div class="p-1 w-50" id="pic-confirm">
+            <button class="btn btn-primary w-100">返回</button>
+          </div>
+          <div class="p-1 w-50" id="pic-destroy">
+            <button class="btn btn-danger w-100">刪除</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- 秀大圖end -->
+
+    <!-- 非圖片網址的Janet提示 -->
+    <div class="pic-alert w-100 h-100" style="display:none;">
+      <div class="m-auto d-flex flex-column align-items-center">
+
+        <!-- Janet本人歐 -->
+        <div>
+          <img src="https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1587143747443.jpg" alt="">
+        </div>
+
+        <!-- 摁鈕 -->
+        <div class="btn btn-primary mt-2" id="alert-confirm">
+          我知道了
+        </div>
+
+      </div>
+    </div>
+    <!-- Janet end -->
+
+    
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

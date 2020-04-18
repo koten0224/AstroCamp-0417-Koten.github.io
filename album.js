@@ -2,7 +2,8 @@ let randomPicID = function (){
   return Math.floor(Math.random() * 1085 )
 }
 $(document).ready(function() {
-  $('button').on('click', function(){
+  let tempPic
+  $('#input-area button').on('click', function(){
     let url
     if($(this).attr('id') === 'paste'){
       url = $("#pic_url").val()
@@ -18,7 +19,22 @@ $(document).ready(function() {
   })
 
   $('#album').on('click','.picture' ,function() {
-    $(this).hide()
+    tempPic = $(this)
+    let url = tempPic.find("img").attr("src").replace('300/300.jpg', '500/500.jpg')
+    $(".pic-show").show()
+    $("#full-pic").prepend(`<img class="w-100" src=${url} alt=""></<img>`)
+  })
+
+  $('#pic-confirm').on('click', function(){
+    $("#full-pic").find($('img')).remove()
+    $('.pic-show').hide()
+  })
+
+  $('#pic-destroy').on('click', function(){
+    tempPic.remove()
+    tempPic = null
+    $("#full-pic").find($('img')).remove()
+    $('.pic-show').hide()
   })
 
   $('#alert-confirm').on('click', function(){
