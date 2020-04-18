@@ -24,8 +24,8 @@
 }
 
 #full-pic img{
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 80%;
+  max-width: 80%;
 }
 
 body{
