@@ -1,5 +1,5 @@
-h3{
-  line-height: 100px;
+.header{
+  margin: 10px auto 10px auto;
 }
 #album{
   border: 10px dashed #ddd;
